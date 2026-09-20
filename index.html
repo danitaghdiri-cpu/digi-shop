@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DigiShop</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+
+
+
+
+    <nav class="navbar navbar-expand-lg digishop-navbar">
+
+        <div class="container-fluid">
+
+            <!-- Logo -->
+            <a href="#" class="navbar-brand">
+                <i class="bi bi-bag-heart-fill"></i>
+                DigiShop
+            </a>
+
+
+            <!-- Search -->
+            <form class="d-flex digishop-search">
+
+                <input type="search" class="form-control" placeholder="جستجوی محصول..." id="search-input">
+
+                <button class="btn" type="submit">
+                    <i class="bi bi-search"></i>
+                </button>
+
+            </form>
+
+
+            <!-- Actions -->
+            <div class="digishop-actions">
+
+                <a href="#" class="nav-icon">
+                    <i class="bi bi-heart"></i>
+                    <span>علاقه‌مندی</span>
+                </a>
+
+                <a href="#" class="nav-icon cart-link">
+
+                    <div class="cart-icon">
+
+                        <i class="bi bi-cart3"></i>
+
+                        <span id="cart-count">
+                            0
+                        </span>
+
+                    </div>
+
+                    <span>سبد خرید</span>
+
+                </a>
+
+                <a href="#" class="login-btn">
+                    <i class="bi bi-person"></i>
+                    ورود
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <section class="hero-section">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <!-- متن -->
+                <div class="col-lg-6">
+
+                    <span class="hero-badge">
+                        🔥 تخفیف‌های ویژه DigiShop
+                    </span>
+
+                    <h1>
+                        خرید هوشمند،
+                        <span>انتخاب بهتر</span>
+                    </h1>
+
+                    <p>
+                        جدیدترین محصولات با بهترین قیمت
+                        را در DigiShop پیدا کنید.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#" class="btn hero-btn">
+                            مشاهده محصولات
+                            <i class="bi bi-arrow-left"></i>
+                        </a>
+
+                        <a href="#" class="btn hero-btn-outline">
+                            تخفیف‌های ویژه
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- تصویر -->
+                <div class="col-lg-6">
+
+                    <div class="hero-image">
+
+                        <img src="images/hero-product.png" alt="DigiShop">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="categories-section">
+
+        <div class="container">
+
+            <div class="section-title">
+                <div>
+                    <span>دسته‌بندی‌ها</span>
+                    <h2>دنبال چه چیزی هستی؟</h2>
+                </div>
+
+                <a href="#" class="view-all">
+                    مشاهده همه
+                    <i class="bi bi-arrow-left"></i>
+                </a>
+            </div>
+
+
+            <div class="row g-4">
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <a href="#" class="category-card">
+                        <div class="category-icon">
+                            <i class="bi bi-phone"></i>
+                        </div>
+                        <h3>موبایل</h3>
+                        <span>۱۲۵ محصول</span>
+                    </a>
+                </div>
+
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <a href="#" class="category-card">
+                        <div class="category-icon">
+                            <i class="bi bi-laptop"></i>
+                        </div>
+                        <h3>لپ‌تاپ</h3>
+                        <span>۸۶ محصول</span>
+                    </a>
+                </div>
+
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <a href="#" class="category-card">
+                        <div class="category-icon">
+                            <i class="bi bi-headphones"></i>
+                        </div>
+                        <h3>هدفون</h3>
+                        <span>۷۴ محصول</span>
+                    </a>
+                </div>
+
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <a href="#" class="category-card">
+                        <div class="category-icon">
+                            <i class="bi bi-smartwatch"></i>
+                        </div>
+                        <h3>ساعت هوشمند</h3>
+                        <span>۵۲ محصول</span>
+                    </a>
+                </div>
+
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <a href="#" class="category-card">
+                        <div class="category-icon">
+                            <i class="bi bi-controller"></i>
+                        </div>
+                        <h3>گیمینگ</h3>
+                        <span>۹۸ محصول</span>
+                    </a>
+                </div>
+
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <a href="#" class="category-card">
+                        <div class="category-icon">
+                            <i class="bi bi-bag"></i>
+                        </div>
+                        <h3>پوشاک</h3>
+                        <span>۱۴۳ محصول</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <section class="offer-section">
+
+            <div class="container">
+
+                <div class="offer-banner">
+
+                    <div class="offer-content">
+
+                        <span class="offer-label">
+                            🔥 پیشنهاد ویژه DigiShop
+                        </span>
+
+                        <h2>
+                            تا ۵۰٪ تخفیف
+                            <span>برای خریدهای ویژه</span>
+                        </h2>
+
+                        <p>
+                            فرصت محدود برای خرید محصولات منتخب
+                            با قیمت‌های استثنایی
+                        </p>
+
+                        <a href="#" class="offer-btn">
+                            مشاهده تخفیف‌ها
+                            <i class="bi bi-arrow-left"></i>
+                        </a>
+
+                    </div>
+
+
+                    <div class="offer-icon">
+
+                        <i class="bi bi-gift-fill"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </section>
+    <section class="products-section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <div>
+                    <span>پیشنهاد DigiShop</span>
+                    <h2>محصولات پرفروش</h2>
+                </div>
+
+                <a href="#" class="view-all">
+                    مشاهده همه
+                    <i class="bi bi-arrow-left"></i>
+                </a>
+
+            </div>
+
+
+            <div class="row g-4">
+
+                <!-- Product 1 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <span class="discount-badge">
+                                ۱۵٪
+                            </span>
+
+                            <button class="favorite-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+
+                            <img src="images/products/phone.jpg" alt="گوشی موبایل">
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <h3>
+                                گوشی موبایل سامسونگ Galaxy S25
+                            </h3>
+
+                            <div class="product-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <span>4.8</span>
+                            </div>
+
+                            <div class="product-price">
+
+                                <span class="old-price">
+                                    ۸۵,۰۰۰,۰۰۰
+                                </span>
+
+                                <strong>
+                                    ۷۲,۲۵۰,۰۰۰
+                                    <small>تومان</small>
+                                </strong>
+
+                            </div>
+
+
+                            <button type="button" class="add-cart-btn" data-name="گوشی موبایل سامسونگ Galaxy S25"
+                                data-price="72250000" data-image="images/products/phone.jpg">
+                                <i class="bi bi-cart-plus"></i>
+                                افزودن به سبد
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Product 2 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <span class="discount-badge">
+                                ۲۰٪
+                            </span>
+
+                            <button class="favorite-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+
+                            <img src="images/products/laptop.jpg" alt="لپ تاپ">
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <h3>
+                                لپ تاپ ASUS VivoBook 15
+                            </h3>
+
+                            <div class="product-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <span>4.6</span>
+                            </div>
+
+                            <div class="product-price">
+
+                                <span class="old-price">
+                                    ۶۰,۰۰۰,۰۰۰
+                                </span>
+
+                                <strong>
+                                    ۴۸,۰۰۰,۰۰۰
+                                    <small>تومان</small>
+                                </strong>
+
+                            </div>
+
+
+                            <button type="button" class="add-cart-btn" data-name="لپ تاپ ASUS VivoBook 15"
+                                data-price="48000000" data-image="images/products/laptop.jpg">
+                                <i class="bi bi-cart-plus"></i>
+                                افزودن به سبد
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Product 3 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <span class="discount-badge">
+                                ۱۰٪
+                            </span>
+
+                            <button class="favorite-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+
+                            <img src="images/products/headphone.jpg" alt="هدفون">
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <h3>
+                                هدفون بی‌سیم Sony WH-1000XM5
+                            </h3>
+
+                            <div class="product-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <span>4.9</span>
+                            </div>
+
+                            <div class="product-price">
+
+                                <span class="old-price">
+                                    ۱۵,۰۰۰,۰۰۰
+                                </span>
+
+                                <strong>
+                                    ۱۳,۵۰۰,۰۰۰
+                                    <small>تومان</small>
+                                </strong>
+
+                            </div>
+
+
+                            <button type="button" class="add-cart-btn" data-name="هدفون بی‌سیم Sony WH-1000XM5"
+                                data-price="13500000" data-image="images/products/headphone.jpg">
+                                <i class="bi bi-cart-plus"></i>
+                                افزودن به سبد
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Product 4 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <span class="discount-badge">
+                                ۲۵٪
+                            </span>
+
+                            <button class="favorite-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+
+                            <img src="images/products/watch.jpg" alt="ساعت هوشمند">
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <h3>
+                                ساعت هوشمند Apple Watch Series 10
+                            </h3>
+
+                            <div class="product-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <span>4.7</span>
+                            </div>
+
+                            <div class="product-price">
+
+                                <span class="old-price">
+                                    ۳۵,۰۰۰,۰۰۰
+                                </span>
+
+                                <strong>
+                                    ۲۶,۲۵۰,۰۰۰
+                                    <small>تومان</small>
+                                </strong>
+
+                            </div>
+
+
+                            <button type="button" class="add-cart-btn" data-name="ساعت هوشمند Apple Watch Series 10"
+                                data-price="26250000" data-image="images/products/watch.jpg">
+                                <i class="bi bi-cart-plus"></i>
+                                افزودن به سبد
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+<div class="cart-overlay"></div>
+
+<div class="cart-sidebar">
+
+    <div class="cart-header">
+
+        <h2>
+            <i class="bi bi-cart3"></i>
+            سبد خرید
+        </h2>
+
+        <button type="button" class="cart-close">
+            <i class="bi bi-x-lg"></i>
+        </button>
+
+    </div>
+
+
+    <div class="cart-items">
+
+        <p class="empty-cart">
+            سبد خرید شما خالی است.
+        </p>
+
+    </div>
+
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+
+            <span>مجموع:</span>
+
+            <strong>
+                <span id="cart-total-price">0</span>
+                تومان
+            </strong>
+
+        </div>
+
+        <button type="button" class="checkout-btn">
+            ادامه و پرداخت
+            <i class="bi bi-arrow-left"></i>
+        </button>
+
+    </div>
+
+</div>
+
+<div class="cart-overlay"></div>
+
+<div class="cart-sidebar">
+
+    <div class="cart-header">
+
+        <h2>
+            <i class="bi bi-cart3"></i>
+            سبد خرید
+        </h2>
+
+        <button type="button" class="cart-close">
+            <i class="bi bi-x-lg"></i>
+        </button>
+
+    </div>
+
+
+    <div class="cart-items">
+
+        <p class="empty-cart">
+            سبد خرید شما خالی است.
+        </p>
+
+    </div>
+
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+
+            <span>مجموع:</span>
+
+            <strong>
+                <span id="cart-total-price">0</span>
+                تومان
+            </strong>
+
+        </div>
+
+        <button type="button" class="checkout-btn">
+
+            ادامه و پرداخت
+
+            <i class="bi bi-arrow-left"></i>
+
+        </button>
+
+    </div>
+
+</div>
+    <!-- JavaScript Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript خودمان -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
